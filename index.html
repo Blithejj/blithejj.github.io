@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>隔壁捷叔叔的技术博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="隔壁捷叔叔的技术博客">
+<meta property="og:url" content="http://uncleblithe.top/index.html">
+<meta property="og:site_name" content="隔壁捷叔叔的技术博客">
+<meta property="og:locale" content="zh">
+<meta property="article:author" content="Blithe jj">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="隔壁捷叔叔的技术博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">隔壁捷叔叔的技术博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">你若成风，记得请我喝西北风</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://uncleblithe.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-linux（修改文本设置和添加环境变量）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/linux%EF%BC%88%E4%BF%AE%E6%94%B9%E6%96%87%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%89/" class="article-date">
+  <time datetime="2020-07-25T07:13:12.094Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux%E7%9A%84%E4%BD%BF%E7%94%A8/">linux的使用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/25/linux%EF%BC%88%E4%BF%AE%E6%94%B9%E6%96%87%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%89/">linxu的使用（其他）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>添加python3环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">全局下的变量  vim &#x2F;etc&#x2F;bashrc                </span><br><span class="line">如果是当前目录下可以执行vim .bash_profile                                               最后添加   export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;python37&#x2F;bin</span><br></pre></td></tr></table></figure>
+
+<p>设置别名，使用快捷操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alias unalias  </span><br><span class="line">在主目录下 .bashrc 或者.bash_profie 下输入改别名</span><br><span class="line">alias rm&#x3D;&#39;rm -i&#39;</span><br><span class="line"> 	alias cp&#x3D;&#39;cp -i&#39;</span><br><span class="line"> 	alias mv&#x3D;&#39;mv -i&#39;</span><br></pre></td></tr></table></figure>
+
+<p>vim文本编辑设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">在主目录下 .vimrc</span><br><span class="line">进入然后就可以修改</span><br><span class="line">    set nu</span><br><span class="line">    set expandtab</span><br><span class="line">    set ts&#x3D;4</span><br><span class="line">    set autoindent</span><br><span class="line">    set ruler</span><br><span class="line">    syntax on</span><br><span class="line">    inoremap pr print(&#39;</span><br><span class="line">    inoremap _main if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://uncleblithe.top/2020/07/25/linux%EF%BC%88%E4%BF%AE%E6%94%B9%E6%96%87%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%89/" data-id="ckd3v2mcs0002asuufs8ib2hg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux（git以及程序安装）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/" class="article-date">
+  <time datetime="2020-07-25T07:03:59.077Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux%E7%9A%84%E4%BD%BF%E7%94%A8/">linux的使用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/">linxu的使用（Git的使用）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">1990s ---&gt; CVS &#x2F; VSS ---&gt; 锁定模式</span><br><span class="line">2000 ---&gt; Subversion ---&gt; SVN ---&gt; 合并模式</span><br><span class="line"></span><br><span class="line">中央集权型的版本控制系统（必须有版本控制器服务器才能使用版本控制）</span><br><span class="line"></span><br><span class="line">git的下载</span><br><span class="line"></span><br><span class="line">	在git官网上下载或者使用yum install git</span><br><span class="line"></span><br><span class="line">1. 创建本地仓库</span><br><span class="line">    git init</span><br><span class="line"></span><br><span class="line">2. 把工作区的文件放到暂存区</span><br><span class="line">    git add filename  添加指定的文件</span><br><span class="line">    git add .  添加所有文件</span><br><span class="line"></span><br><span class="line">3. 把缓存区的文件提交到本地仓库</span><br><span class="line">    第一次提交代码需要设置用户名和邮箱</span><br><span class="line">    git config --global user.name &quot;jackfrued&quot;</span><br><span class="line">    git config --global user.email &quot;jackfrued@126.com&quot;</span><br><span class="line"></span><br><span class="line">    git commit -m &#39;...&#39;  双引号内的内容为描述信息</span><br><span class="line"></span><br><span class="line">4. 查看提交日志（历史）</span><br><span class="line">    git log  查看日志   如果感觉太繁琐，可以加上参数  --pretty&#x3D;oneline，只会显示版本号和提交时的备注信息</span><br><span class="line">    git reflog  可以查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）</span><br><span class="line"></span><br><span class="line">5. 用暂存区的内容恢复工作区</span><br><span class="line">    git restore filename</span><br><span class="line"></span><br><span class="line">6. 版本回退</span><br><span class="line">    git reset --hard ID</span><br><span class="line"></span><br><span class="line">7. 添加远端仓库</span><br><span class="line">    git remote add origin URL</span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">8. 同步代码</span><br><span class="line">    ~ 上推（把自己的工作成功同步到服务器）</span><br><span class="line">    git push -u origin master</span><br><span class="line">    git push</span><br><span class="line">    ~ 下拉</span><br><span class="line">    git pull</span><br><span class="line"></span><br><span class="line">9. 查看冲突 ---&gt; reject &#x2F; CONFLICT</span><br><span class="line">    git diff</span><br><span class="line"></span><br><span class="line">10. 配置免密访问</span><br><span class="line">    ssh-keygen -t rsa -b 2048 -C &quot;jackfrued@126.com&quot;</span><br><span class="line">    ---&gt; ~&#x2F;.ssh&#x2F; ---&gt; id_rsa &#x2F; id_rsa.pub</span><br><span class="line"></span><br><span class="line">    cat id_rsa.pub ---&gt; 把公钥部署到服务器上</span><br><span class="line"></span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote add origin SSH地址</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">    git push -u origin master</span><br><span class="line"></span><br><span class="line">11. 克隆代码</span><br><span class="line">    git clone 仓库地址</span><br><span class="line">    git clone --depth&#x3D;1 仓库地址 文件夹名字</span><br><span class="line"></span><br><span class="line">12. 分支操作</span><br><span class="line">    ~ 查看分支：</span><br><span class="line">        git branch</span><br><span class="line">        git branch -a</span><br><span class="line">    ~ 创建分支：</span><br><span class="line">        git branch 分支名</span><br><span class="line">    ~ 切换分支：</span><br><span class="line">        旧：git checkout 分支名</span><br><span class="line">        新：git switch 分支名 </span><br><span class="line">    ~ 创建并切换分支：</span><br><span class="line">        旧：git checkout -b 分支名</span><br><span class="line">        新：git switch -C 分支名</span><br><span class="line">    ~ 合并分支（把指定分支的工作成果合并到当前所在的分支）</span><br><span class="line">        git merge 分支名</span><br><span class="line">    ~ 删除分支：</span><br><span class="line">        git branch -d 分支名</span><br><span class="line">        git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">MariaDB ---&gt; MySQL的开源免费分支</span><br><span class="line">yum install -y mariadb mariadb-server</span><br><span class="line">先在官网下载安装包或者直接使用yum下载，不需要以下操作</span><br><span class="line"></span><br><span class="line">安装MySQL：</span><br><span class="line">    ~ 删除和mariadb相关的包</span><br><span class="line">    yum list installed | grep mariadb | awk &#39;&#123;print $1&#125;&#39; | xargs yum erase -y </span><br><span class="line"></span><br><span class="line">    ~ 安装common包</span><br><span class="line">    rpm -ivh mysql-community-common-5.7.31-1.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">    ~ 安装libs和libs-compat包</span><br><span class="line">    rpm -ivh mysql-community-libs-5.7.31-1.el7.x86_64.rpm</span><br><span class="line">    rpm -ivh mysql-community-libs-compat-5.7.31-1.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">    ~ 安装devel包（给开发者使用的）</span><br><span class="line">    rpm -ivh mysql-community-devel-5.7.31-1.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">    ~ 安装client包（客户端工具）</span><br><span class="line">    rpm -ivh mysql-community-client-5.7.31-1.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">    ~ 安装server包（MySQL服务器程序）</span><br><span class="line">    yum install -y libaio numactl-libs</span><br><span class="line">    rpm -ivh mysql-community-server-5.7.31-1.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">    MySQL的数据文件 &#x2F;var&#x2F;lib&#x2F;mysql</span><br><span class="line">    MySQL的日志文件 &#x2F;var&#x2F;log&#x2F;mysqld.log</span><br><span class="line"></span><br><span class="line">安装软件：rpm -ivh</span><br><span class="line">移除软件：rpm -e</span><br><span class="line">查询软件：rpm -qa</span><br><span class="line"></span><br><span class="line">启动MySQL</span><br><span class="line">    systemctl start mysqld</span><br><span class="line"></span><br><span class="line">停止MySQL</span><br><span class="line">    systemctl stop mysqld</span><br><span class="line"></span><br><span class="line">重启MySQL</span><br><span class="line">    systemctl restart mysqld</span><br><span class="line"></span><br><span class="line">查看MySQL状态</span><br><span class="line">    systemctl status mysqld</span><br><span class="line"></span><br><span class="line">连接MySQL数据库</span><br><span class="line">    mysql -u root -p</span><br><span class="line"></span><br><span class="line">修改数据库密码</span><br><span class="line">    sql&gt; alter user &#39;root&#39;@&#39;localhost&#39; identified by &#39;Luohao.618&#39;;</span><br><span class="line"></span><br><span class="line">如果暂时需要使用弱口令密码，可以做下面的设置PATH环境变量</span><br><span class="line">    sql&gt; set global validate_password_policy&#x3D;0;</span><br><span class="line">    sql&gt; set global validate_password_length&#x3D;6;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="其他程序的安装"><a href="#其他程序的安装" class="headerlink" title="其他程序的安装"></a>其他程序的安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">CentOS系统上如何安装软件和服务</span><br><span class="line">1. 使用包管理工具安装软件</span><br><span class="line">    ~ yum --&gt; Yellow dog Updater Modified</span><br><span class="line">        搜索：yum search nginx</span><br><span class="line">        安装：yum install -y nginx</span><br><span class="line">        卸载：yum erase -y nginx &#x2F; yum remove -y nginx</span><br><span class="line">        更新：yum update nginx &#x2F; yum update</span><br><span class="line">        查看信息：yum info nginx</span><br><span class="line">        查看安装的所有软件包：yum list installed | grep nginx</span><br><span class="line">    ~ rpm</span><br><span class="line"></span><br><span class="line">2. 源代码构建安装 ---&gt; configure &#x2F; Makefile</span><br><span class="line">    例子1：源代码构建安装Git</span><br><span class="line">    ~ 下载源代码：</span><br><span class="line">    wget https:&#x2F;&#x2F;mirrors.edge.kernel.org&#x2F;pub&#x2F;software&#x2F;scm&#x2F;git&#x2F;git-2.27.0.tar.xz</span><br><span class="line">    ~ 解压缩和解归档</span><br><span class="line">    xz -d git-2.27.0.tar.xz ---&gt; git-2.27.0.tar</span><br><span class="line">    tar -xf git-2.27.0.tar ---&gt;  git-2.27.0（文件夹）</span><br><span class="line">    ~ 安装前的准备工作</span><br><span class="line">    cd git-2.27.0</span><br><span class="line">    yum install -y libcurl libcurl-devel zlib zlib-devel</span><br><span class="line">    yum install -y gcc</span><br><span class="line">    .&#x2F;configure --prefix&#x3D;&#x2F;usr&#x2F;local</span><br><span class="line">    ~ 编译源代码生成可执行程序</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ~ 通过下面的命令检查是否安装成功</span><br><span class="line">    git --version</span><br><span class="line">    whereis git</span><br><span class="line"></span><br><span class="line">    例子2：源代码构建安装Python 3</span><br><span class="line">    ~ 补充安装Python 3需要用到的依赖项</span><br><span class="line">    yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel libdb4-devel libpcap-devel xz-devel libffi-devel</span><br><span class="line">    ~ 下载和检查Python3的源代码</span><br><span class="line">    wget https:&#x2F;&#x2F;www.python.org&#x2F;ftp&#x2F;python&#x2F;3.7.8&#x2F;Python-3.7.8.tar.xz</span><br><span class="line">    md5sum Python-3.7.8.tar.xz</span><br><span class="line">    ~ 解压缩和解归档</span><br><span class="line">    xz -d Python-3.7.8.tar.xz</span><br><span class="line">    tar -xf Python-3.7.8.tar</span><br><span class="line">    ~ 安装前的准备工作</span><br><span class="line">    cd Python-3.7.8</span><br><span class="line">    .&#x2F;configure --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;python37 --enable-optimizations</span><br><span class="line">    ~ 构建和安装</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ~ 配置PATH环境变量</span><br><span class="line">    vim &#x2F;etc&#x2F;bashrc ---&gt; 系统环境变量</span><br><span class="line">    vim ~&#x2F;.bash_profile ---&gt; 用户环境变量</span><br><span class="line">    ---&gt; Go</span><br><span class="line">    export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;python37&#x2F;bin</span><br><span class="line">    ---&gt; Esc ZZ</span><br><span class="line">    ~ 检查是否安装成功</span><br><span class="line">    退出登录，重新登录，激活PATH环境变量</span><br><span class="line">    python3 --version</span><br><span class="line">    pip3 --version</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://uncleblithe.top/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/" data-id="ckd3v2mck0001asuua58o3l1z" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux的使用（文件操作篇）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/25/linux%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%AF%87%EF%BC%89/" class="article-date">
+  <time datetime="2020-07-25T02:42:29.506Z" itemprop="datePublished">2020-07-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux%E7%9A%84%E4%BD%BF%E7%94%A8/">linux的使用</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/25/linux%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%AF%87%EF%BC%89/">linxu的使用（文件操作篇）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="linux的使用（文件操作篇）"><a href="#linux的使用（文件操作篇）" class="headerlink" title="linux的使用（文件操作篇）"></a>linux的使用（文件操作篇）</h4><h6 id="为什么选择linux？"><a href="#为什么选择linux？" class="headerlink" title="为什么选择linux？"></a>为什么选择linux？</h6><p>​    linux是最适合用来做服务器的，比如web服务器，缓存服务器，消息队列服务器，分布式存储服务器    </p>
+<p>​    服务器操作系统：商业化的Unix / Linux / Windows Server</p>
+<p>​    像android和ios都是unix演化而来的</p>
+<p>​    Unix —&gt; Minix —&gt; Linux —&gt; Android<br>​    Unix —&gt; BSD —&gt; FreeBSD —&gt; macOS —&gt; iOS<br>​    Unix —&gt; Solaris / Hp-UX / AIX</p>
+<p>​    unix的成本太高，如果一般中小企业都选则的linux，因为开源便宜</p>
+<p>​    Linus —&gt; Linux内核（kernel） —-&gt; Linux发行版本<br>​    ~ Redhat / CentOS / Ubuntu / Debian / SUSE</p>
+<p>​    cenos没有gui（图形用户）界面，通过shell（壳程序）提供人机接口，bash（相当于对shell再一次    的优化）</p>
+<p>​    为什么使用云服务器：</p>
+<p>​    云服务器 —&gt; 性价比高、伸缩性强、配置简单（控制台）</p>
+<p>​    远程登录云服务器的工具：</p>
+<p>​    SSH 22/tcp —&gt; FinalShell / Termius / Putty / XShell / MobaTerm</p>
+<h6 id="linux的帮助文档手册"><a href="#linux的帮助文档手册" class="headerlink" title="linux的帮助文档手册"></a>linux的帮助文档手册</h6><p>​    linux中提供了许多命令帮助手册：</p>
+<p>​    ①在命令后面加上–help参数 ：  比如要查询 mkdir的帮助文档  </p>
+<p>​    mkdir –help</p>
+<p>​    ②使用man命令—–&gt;全称为manual</p>
+<p>​    man mkdir</p>
+<p>​    ③使用第三方工具tldr获取帮助手册</p>
+<p>​    通过npm install tldr 下载，但是使用之前要检查是否安装了nodejs，使用 nodejs –version查看，如    果没安装，要安装后才能使用npm进行下载</p>
+<h6 id="linux文件操作相关的命令"><a href="#linux文件操作相关的命令" class="headerlink" title="linux文件操作相关的命令"></a>linux文件操作相关的命令</h6><p>​    1，pwd  — print working diretory —显示当前工作目录（绝对路径）</p>
+<p>​    2，cd — change directory — 切换目录（绝对路径和相对路径都可）</p>
+<p>​    3，ls — list directory contents — 列出当前文件夹下的内容   </p>
+<p>​        后面可以跟参数  ls -la   表示以长格式的形式列出当前文件夹下的所有文件（包含隐藏文件）</p>
+<p>​        -a 表示列出当前文件夹下的所有文件（包含隐藏文件，以.开头的文件）</p>
+<p>​        -l 表示当前文件夹的下的文件以长格式列出（不包含隐藏文件） </p>
+<p>​        两个可以同时使用，没有顺序</p>
+<p>​        -R 递归式查看  暂时没有啥用</p>
+<p>​        <img src="C:%5CUsers%5Cjiangjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200725100609087.png" alt="image-20200725100609087"></p>
+<p>​    4，mkdir — make directories — 创建文件夹，</p>
+<p>​        中间可以跟参数p，如果没有父类自动创建</p>
+<p>​        <img src="C:%5CUsers%5Cjiangjie%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200725100914887.png" alt="image-20200725100914887"></p>
+<p>​    5，rmdir — 删除空文件夹</p>
+<p>​        rmdir abc</p>
+<p>​    6，touch —创建空文件或者修改文件的最后访问时间</p>
+<p>​        touch 2.txt</p>
+<p>​    7，rm — 删除文件，如果要删除文件夹，要加-r</p>
+<p>​        -f 表示强制删除</p>
+<p>​        -r 表示递归式删除</p>
+<p>​        rm -rf {abc，1.txt}  可以同时删除多个</p>
+<p>​     8，cat — 查看文件的内容</p>
+<p>​        -n 显示行号</p>
+<p>​        cat -n 1.txt</p>
+<p>​    9，head和tail  head查看文件的开头，tail查看文件的结尾，默认都是查看十行</p>
+<p>​        head/tail - 行数 查看文件开头/文件结尾的指定行数</p>
+<p>​        head/tail - 20</p>
+<p>​    10，more/less — 逐行逐页的查看文件的内容 </p>
+<p>​        more/less hello.txt</p>
+<p>​    11，wc — 统计行数，单词数，字节数</p>
+<p>​            wc hello.txt</p>
+<p>​    12，iconv — 转换文件编码</p>
+<p>​            -f 原始编码</p>
+<p>​            -t 目标编码</p>
+<p>​            iconv -f unicode  -t utf-8 hello.txt 将原来hello.txt的编码方式为unicode转换为utf-8</p>
+<p>​    13，mv 移动文件</p>
+<p>​            mv  文件  目的地址</p>
+<p>​            如果不是跟目标地址，则是改名  mv 1.txt 2.txt</p>
+<p>​    14，rename 是批量重命名</p>
+<p>​    15，file — 查看文件的属性</p>
+<p>​            file 1.txt  ，会显示为 ASCII txt</p>
+<p>​    16,   gzip/gunzip   gzip压缩文件成为gz结尾的文件， gunzip 解压文件以gz结尾的文件 </p>
+<p>​            xz-z / xz -d    xz-z压缩文件成为xz结尾的文件，xz-d 解压文件以xz结尾的文件</p>
+<p>​    17， tar-cvf  归档，将多个文件合并到一个文件中，v表示verbose，显示细节，可以省略</p>
+<p>​            tar -xvf 解归档  ，把一个文件拆分成多个文件，v表示verbose，显示细节，可以省略</p>
+<p>​            当解压以tgz或者tar.gz结尾的文件</p>
+<pre><code>可以直接使用  tar -zxvf  文件名  的形式一次性解压，xz后缀不行</code></pre><p>​    18，uniq — 去重，但只能去重相邻两个的内容</p>
+<p>​    19，sort — 排序，将文本的内容以ascii值的顺序排序</p>
+<p>​    常用文本操作的快捷键：</p>
+<p>​    Ctrl+u：删除整行<br>​    Ctrl+w：删除光标前面的单词<br>​    Ctrl+a：光标回到行首<br>​    Ctrl+e：光标去到行尾</p>
+<p>​    table:自动补全命令或路径</p>
+<pre><code>重定向：
+~ 输出重定向：&gt;
+    echo apple &gt; fruits.txt
+~ 追加输入重定向：&gt;&gt;
+    echo apple &gt;&gt; fruits.txt
+    echo banana &gt;&gt; fruits.txt
+~ 错误输出重定向：2&gt;
+~ 输入重定向：&lt;</code></pre><p>管道：| 操作系统提供的进程间通信的I/O通道<br>    ~ 前一个命令（进程）的输出作为下一个命令（进程）的输入</p>
+<p>sort fruits.txt | uniq -c</p>
+<h6 id="vim编辑器的常用命令"><a href="#vim编辑器的常用命令" class="headerlink" title="vim编辑器的常用命令"></a>vim编辑器的常用命令</h6><p>工作模式：<br>    ~ 命令模式<br>        移动光标：<br>            ~ G：最后一行<br>            ~ gg：第一行<br>            ~ 数字G：指定行<br>            ~ 左下上右：h j k l<br>            ~ 0：行首<br>            ~ $：行尾<br>            ~ w：下一个单词<br>            ~ 下一页/上一页：Ctrl+f / Ctrl+b<br>            ~ 下一行/上一行：Ctrl+e / Ctrl+y<br>        编辑内容：<br>            ~ 删除行：dd / 100dd<br>            ~ 删除到行首/行尾：d0 / d$<br>            ~ 删除一个单词：dw<br>            ~ 拷贝行：yy / 10yy<br>            ~ 粘贴：p<br>            ~ 撤销：u<br>            ~ 恢复：Ctrl+r<br>        保存退出<br>            ~ ZZ<br>        进入编辑模式：<br>            i / I / a / A / o / O<br>        宏操作：<br>            录制 - q<br>            qa —&gt; i —&gt; # —&gt; Esc —&gt; j0 —&gt; q<br>            @a / 100@a<br>        进入末行模式：<br>            : / ?<br>    ~ 编辑模式（插入模式）<br>        回到命令模式：Esc<br>    ~ 末行模式（底线命令模式）<br>        set nu / set nonu<br>        set ts=4<br>        set autoindent / set noautoindent<br>        set expandtab<br>        set ruler / set noruler<br>        set hls / set nohls<br>        w / q / wq / q! / qa</p>
+<p>​        查找keyword的相关内容：</p>
+<p>​        /keyword ?keyword</p>
+<p>​        查找并替换内容</p>
+<p>​        1,$s/keyword/content/cgie</p>
+<p>​        1，表示从第一行开始，可以自由设置</p>
+<p>​        $s表示到末尾，</p>
+<p>​            c - confirm - 确认<br>​            g - global - 全局<br>​            i - ignore case - 忽略大小写<br>​            e - error - 忽略错误</p>
+<p>vim多窗口操作<br>:sp —&gt; 水平拆分窗口<br>:vs —&gt; 垂直拆分窗口<br>:ls —&gt; 查看所有文件<br>:b 编号 —&gt; 切换文件<br>double Ctrl+w —&gt; 切换光标到下一个窗口<br>:qa —&gt; 退出所有窗口 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://uncleblithe.top/2020/07/25/linux%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%AF%87%EF%BC%89/" data-id="ckd3v2mcb0000asuucyyzddzj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/24/hello-world/" class="article-date">
+  <time datetime="2020-07-24T11:33:33.502Z" itemprop="datePublished">2020-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/07/24/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://uncleblithe.top/2020/07/24/hello-world/" data-id="ckd05f3z700006suubsoa9ge0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux%E7%9A%84%E4%BD%BF%E7%94%A8/">linux的使用</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/07/25/linux%EF%BC%88%E4%BF%AE%E6%94%B9%E6%96%87%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%89/">linxu的使用（其他）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/">linxu的使用（Git的使用）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/25/linux%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%AF%87%EF%BC%89/">linxu的使用（文件操作篇）</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Blithe jj<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
