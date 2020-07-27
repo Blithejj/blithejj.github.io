@@ -1,162 +1,153 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
 
+<html lang="en" class="no-js" id="body">
+
+	<!-- BEGIN HEAD -->
 <head>
-	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
-	<link rel="shortcut icon" href="/img/logo_miccall.png">
-	
-			    <title>
-    隔壁捷叔叔的技术博客
-    </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/css/mic_main.css" />
-    <link rel="stylesheet" href="/css/dropdownMenu.css" />
-    <meta name="keywords" content="miccall" />
-    
-    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	 
-    <noscript>
-        <link rel="stylesheet" href="/css/noscript.css" />
-    </noscript>
-    <style type="text/css">
-        body:before {
-          content: ' ';
-          position: fixed;
-          top: 0;
-          background: url('/img/bg.jpg') center 0 no-repeat;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-size: cover; 
-        }
-    </style>
 
-			    
   
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <title>linxu的使用（Git的使用）</title>
+
+  
+
+  <meta name="description" content="">
+
   
 
 
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.scrollex.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script>
-	
+  <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/2980/5252/files/favicon_32x32.png?v=1521894486" type="image/png">
+
+  
+
+<!-- Open Graph data-->
+<meta property="og:type" content="blog">
+<meta property="og:title" content="linxu的使用（Git的使用）">
+<meta property="og:site_name" content="隔壁捷叔叔的技术博客">
+<meta property="og:url" content="http://uncleblithe.top/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/">
+<meta property="og:description" content="">
+
+
+
+
+
+<!-- end Open Graph data-->
+  
+<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+  
+<!-- GLOBAL MANDATORY STYLES -->
+<link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/vendor/animate.css/animate.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="/sass/layout.css">
+
+  
+
+
+
 <meta name="generator" content="Hexo 4.2.1"></head>
-    
+<!-- END HEAD -->
+
+  <body>
 		
-<!-- Layouts -->
+		
 
 
+<!--========== HEADER ==========-->
+<header class="header navbar-fixed-top">
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="menu-container js_nav-item">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="toggle-icon"></span>
+              </button>
 
-<!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css" />
-<link rel="stylesheet" href="/css/typo.css" />
-<!-- 文章页 -->
-<body class="is-loading">
-    <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
-        <!-- Intro 头部显示 s -->
-        <!-- Intro 头部显示 e -->
-        <!-- Header 头部logo start -->
-        <header id="header">
-    <a href="/" class="logo">MICCALL</a>
+              <!-- Logo -->
+              <div class="logo">
+                <!-- En caso de una text -->
+                
+                    <a class="logo-wrap" href="/#body" style="text-decoration: none;" >
+                        <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
+                        <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+                    </a>
+                
+              </div>
+              <!-- End Logo -->
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse nav-collapse">
+              <div class="menu-container">
+                  <ul class="nav navbar-nav navbar-nav-right">
+                      
+                      
+                        <li class="js_nav-item nav-item">
+                            <a  class="nav-item-child nav-item-hover"
+                                href="/#body"
+                            >
+                            Home
+                        </a>
+                        </li>
+                      
+                        <li class="js_nav-item nav-item">
+                            <a  class="nav-item-child nav-item-hover"
+                                href="/#about"
+                            >
+                            About
+                        </a>
+                        </li>
+                      
+                        <li class="js_nav-item nav-item">
+                            <a  class="nav-item-child nav-item-hover"
+                                href="/#experience"
+                            >
+                            Experience
+                        </a>
+                        </li>
+                      
+                        <li class="js_nav-item nav-item">
+                            <a  class="nav-item-child nav-item-hover"
+                                href="/#work"
+                            >
+                            Work
+                        </a>
+                        </li>
+                      
+                        <li class="js_nav-item nav-item">
+                            <a  class="nav-item-child nav-item-hover"
+                                href="/#contact"
+                            >
+                            Contact
+                        </a>
+                        </li>
+                      
+                  </ul>
+              </div>
+          </div>
+          <!-- End Navbar Collapse -->
+      </div>
+  </nav>
+  <!-- Navbar -->
+
 </header>
-        <!-- Nav 导航条 start -->
-        <nav id="nav" class="special" >
-            <ul class="menu links" >
-			<!-- Homepage  主页  --> 
-			<li >
-	            <a href="/" rel="nofollow">主页</a>
-	        </li>
-			<!-- categories_name  分类   --> 
-	        
-	        <li class="active">
-	            <a href="#s1">分类</a>
-	                    <ul class="submenu">
-	                        <li>
-	                        <a class="category-link" href="/categories/linux%E7%9A%84%E4%BD%BF%E7%94%A8/">linux的使用</a>
-	                    </ul>
-	        </li>
-	        
-	        <!-- archives  归档   --> 
-	        
-	        
-		        <!-- Pages 自定义   -->
-		        
-		        <li>
-		            <a href="/about/" title="简历">
-		                简历
-		            </a>
-		        </li>
-		        
-		        <li>
-		            <a href="/group/" title="团队">
-		                团队
-		            </a>
-		        </li>
-		        
-		        <li>
-		            <a href="/gallery/" title="图库">
-		                图库
-		            </a>
-		        </li>
-		        
-		        <li>
-		            <a href="/tag/" title="标签">
-		                标签
-		            </a>
-		        </li>
-		        
+<!--========== END HEADER ==========-->
 
-
-            </ul>
-            <!-- icons 图标   -->
-			<ul class="icons">
-                    
-                    <li>
-                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
-                            <i class="icon fa fa-github"></i>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
-                            <i class="icon fa fa-500px"></i>
-                        </a>
-                    </li>
-                    
-			</ul>
-</nav>
-
-        <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >linxu的使用（Git的使用）</h2></a>
-            </div>
-            <!-- Post -->
-            <div class="typo" style="padding: 3rem;">
-                <h5 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">1990s ---&gt; CVS &#x2F; VSS ---&gt; 锁定模式</span><br><span class="line">2000 ---&gt; Subversion ---&gt; SVN ---&gt; 合并模式</span><br><span class="line"></span><br><span class="line">中央集权型的版本控制系统（必须有版本控制器服务器才能使用版本控制）</span><br><span class="line"></span><br><span class="line">git的下载</span><br><span class="line"></span><br><span class="line">	在git官网上下载或者使用yum install git</span><br><span class="line"></span><br><span class="line">1. 创建本地仓库</span><br><span class="line">    git init</span><br><span class="line"></span><br><span class="line">2. 把工作区的文件放到暂存区</span><br><span class="line">    git add filename  添加指定的文件</span><br><span class="line">    git add .  添加所有文件</span><br><span class="line"></span><br><span class="line">3. 把缓存区的文件提交到本地仓库</span><br><span class="line">    第一次提交代码需要设置用户名和邮箱</span><br><span class="line">    git config --global user.name &quot;jackfrued&quot;</span><br><span class="line">    git config --global user.email &quot;jackfrued@126.com&quot;</span><br><span class="line"></span><br><span class="line">    git commit -m &#39;...&#39;  双引号内的内容为描述信息</span><br><span class="line"></span><br><span class="line">4. 查看提交日志（历史）</span><br><span class="line">    git log  查看日志   如果感觉太繁琐，可以加上参数  --pretty&#x3D;oneline，只会显示版本号和提交时的备注信息</span><br><span class="line">    git reflog  可以查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）</span><br><span class="line"></span><br><span class="line">5. 用暂存区的内容恢复工作区</span><br><span class="line">    git restore filename</span><br><span class="line"></span><br><span class="line">6. 版本回退</span><br><span class="line">    git reset --hard ID</span><br><span class="line"></span><br><span class="line">7. 添加远端仓库</span><br><span class="line">    git remote add origin URL</span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">8. 同步代码</span><br><span class="line">    ~ 上推（把自己的工作成功同步到服务器）</span><br><span class="line">    git push -u origin master</span><br><span class="line">    git push</span><br><span class="line">    ~ 下拉</span><br><span class="line">    git pull</span><br><span class="line"></span><br><span class="line">9. 查看冲突 ---&gt; reject &#x2F; CONFLICT</span><br><span class="line">    git diff</span><br><span class="line"></span><br><span class="line">10. 配置免密访问</span><br><span class="line">    ssh-keygen -t rsa -b 2048 -C &quot;jackfrued@126.com&quot;</span><br><span class="line">    ---&gt; ~&#x2F;.ssh&#x2F; ---&gt; id_rsa &#x2F; id_rsa.pub</span><br><span class="line"></span><br><span class="line">    cat id_rsa.pub ---&gt; 把公钥部署到服务器上</span><br><span class="line"></span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote add origin SSH地址</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">    git push -u origin master</span><br><span class="line"></span><br><span class="line">11. 克隆代码</span><br><span class="line">    git clone 仓库地址</span><br><span class="line">    git clone --depth&#x3D;1 仓库地址 文件夹名字</span><br><span class="line"></span><br><span class="line">12. 分支操作</span><br><span class="line">    ~ 查看分支：</span><br><span class="line">        git branch</span><br><span class="line">        git branch -a</span><br><span class="line">    ~ 创建分支：</span><br><span class="line">        git branch 分支名</span><br><span class="line">    ~ 切换分支：</span><br><span class="line">        旧：git checkout 分支名</span><br><span class="line">        新：git switch 分支名 </span><br><span class="line">    ~ 创建并切换分支：</span><br><span class="line">        旧：git checkout -b 分支名</span><br><span class="line">        新：git switch -C 分支名</span><br><span class="line">    ~ 合并分支（把指定分支的工作成果合并到当前所在的分支）</span><br><span class="line">        git merge 分支名</span><br><span class="line">    ~ 删除分支：</span><br><span class="line">        git branch -d 分支名</span><br><span class="line">        git branch -D 分支名</span><br></pre></td></tr></table></figure>
+		<section id="post">
+  <div class="content content-width">
+    <h1 class="post-title"> linxu的使用（Git的使用）</h1>
+    <p class="date"> Sat Jul 25 2020 15:03:59 GMT+0800 </p>
+    
+    <h5 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">1990s ---&gt; CVS &#x2F; VSS ---&gt; 锁定模式</span><br><span class="line">2000 ---&gt; Subversion ---&gt; SVN ---&gt; 合并模式</span><br><span class="line"></span><br><span class="line">中央集权型的版本控制系统（必须有版本控制器服务器才能使用版本控制）</span><br><span class="line"></span><br><span class="line">git的下载</span><br><span class="line"></span><br><span class="line">	在git官网上下载或者使用yum install git</span><br><span class="line"></span><br><span class="line">1. 创建本地仓库</span><br><span class="line">    git init</span><br><span class="line"></span><br><span class="line">2. 把工作区的文件放到暂存区</span><br><span class="line">    git add filename  添加指定的文件</span><br><span class="line">    git add .  添加所有文件</span><br><span class="line"></span><br><span class="line">3. 把缓存区的文件提交到本地仓库</span><br><span class="line">    第一次提交代码需要设置用户名和邮箱</span><br><span class="line">    git config --global user.name &quot;jackfrued&quot;</span><br><span class="line">    git config --global user.email &quot;jackfrued@126.com&quot;</span><br><span class="line"></span><br><span class="line">    git commit -m &#39;...&#39;  双引号内的内容为描述信息</span><br><span class="line"></span><br><span class="line">4. 查看提交日志（历史）</span><br><span class="line">    git log  查看日志   如果感觉太繁琐，可以加上参数  --pretty&#x3D;oneline，只会显示版本号和提交时的备注信息</span><br><span class="line">    git reflog  可以查看所有分支的所有操作记录（包括已经被删除的 commit 记录和 reset 的操作）</span><br><span class="line"></span><br><span class="line">5. 用暂存区的内容恢复工作区</span><br><span class="line">    git restore filename</span><br><span class="line"></span><br><span class="line">6. 版本回退</span><br><span class="line">    git reset --hard ID</span><br><span class="line"></span><br><span class="line">7. 添加远端仓库</span><br><span class="line">    git remote add origin URL</span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">8. 同步代码</span><br><span class="line">    ~ 上推（把自己的工作成功同步到服务器）</span><br><span class="line">    git push -u origin master</span><br><span class="line">    git push</span><br><span class="line">    ~ 下拉</span><br><span class="line">    git pull</span><br><span class="line"></span><br><span class="line">9. 查看冲突 ---&gt; reject &#x2F; CONFLICT</span><br><span class="line">    git diff</span><br><span class="line"></span><br><span class="line">10. 配置免密访问</span><br><span class="line">    ssh-keygen -t rsa -b 2048 -C &quot;jackfrued@126.com&quot;</span><br><span class="line">    ---&gt; ~&#x2F;.ssh&#x2F; ---&gt; id_rsa &#x2F; id_rsa.pub</span><br><span class="line"></span><br><span class="line">    cat id_rsa.pub ---&gt; 把公钥部署到服务器上</span><br><span class="line"></span><br><span class="line">    git remote remove origin</span><br><span class="line">    git remote add origin SSH地址</span><br><span class="line">    git remote -v</span><br><span class="line"></span><br><span class="line">    git push -u origin master</span><br><span class="line"></span><br><span class="line">11. 克隆代码</span><br><span class="line">    git clone 仓库地址</span><br><span class="line">    git clone --depth&#x3D;1 仓库地址 文件夹名字</span><br><span class="line"></span><br><span class="line">12. 分支操作</span><br><span class="line">    ~ 查看分支：</span><br><span class="line">        git branch</span><br><span class="line">        git branch -a</span><br><span class="line">    ~ 创建分支：</span><br><span class="line">        git branch 分支名</span><br><span class="line">    ~ 切换分支：</span><br><span class="line">        旧：git checkout 分支名</span><br><span class="line">        新：git switch 分支名 </span><br><span class="line">    ~ 创建并切换分支：</span><br><span class="line">        旧：git checkout -b 分支名</span><br><span class="line">        新：git switch -C 分支名</span><br><span class="line">    ~ 合并分支（把指定分支的工作成果合并到当前所在的分支）</span><br><span class="line">        git merge 分支名</span><br><span class="line">    ~ 删除分支：</span><br><span class="line">        git branch -d 分支名</span><br><span class="line">        git branch -D 分支名</span><br></pre></td></tr></table></figure>
 
 
 
@@ -167,108 +158,62 @@
 <h5 id="其他程序的安装"><a href="#其他程序的安装" class="headerlink" title="其他程序的安装"></a>其他程序的安装</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">CentOS系统上如何安装软件和服务</span><br><span class="line">1. 使用包管理工具安装软件</span><br><span class="line">    ~ yum --&gt; Yellow dog Updater Modified</span><br><span class="line">        搜索：yum search nginx</span><br><span class="line">        安装：yum install -y nginx</span><br><span class="line">        卸载：yum erase -y nginx &#x2F; yum remove -y nginx</span><br><span class="line">        更新：yum update nginx &#x2F; yum update</span><br><span class="line">        查看信息：yum info nginx</span><br><span class="line">        查看安装的所有软件包：yum list installed | grep nginx</span><br><span class="line">    ~ rpm</span><br><span class="line"></span><br><span class="line">2. 源代码构建安装 ---&gt; configure &#x2F; Makefile</span><br><span class="line">    例子1：源代码构建安装Git</span><br><span class="line">    ~ 下载源代码：</span><br><span class="line">    wget https:&#x2F;&#x2F;mirrors.edge.kernel.org&#x2F;pub&#x2F;software&#x2F;scm&#x2F;git&#x2F;git-2.27.0.tar.xz</span><br><span class="line">    ~ 解压缩和解归档</span><br><span class="line">    xz -d git-2.27.0.tar.xz ---&gt; git-2.27.0.tar</span><br><span class="line">    tar -xf git-2.27.0.tar ---&gt;  git-2.27.0（文件夹）</span><br><span class="line">    ~ 安装前的准备工作</span><br><span class="line">    cd git-2.27.0</span><br><span class="line">    yum install -y libcurl libcurl-devel zlib zlib-devel</span><br><span class="line">    yum install -y gcc</span><br><span class="line">    .&#x2F;configure --prefix&#x3D;&#x2F;usr&#x2F;local</span><br><span class="line">    ~ 编译源代码生成可执行程序</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ~ 通过下面的命令检查是否安装成功</span><br><span class="line">    git --version</span><br><span class="line">    whereis git</span><br><span class="line"></span><br><span class="line">    例子2：源代码构建安装Python 3</span><br><span class="line">    ~ 补充安装Python 3需要用到的依赖项</span><br><span class="line">    yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel libdb4-devel libpcap-devel xz-devel libffi-devel</span><br><span class="line">    ~ 下载和检查Python3的源代码</span><br><span class="line">    wget https:&#x2F;&#x2F;www.python.org&#x2F;ftp&#x2F;python&#x2F;3.7.8&#x2F;Python-3.7.8.tar.xz</span><br><span class="line">    md5sum Python-3.7.8.tar.xz</span><br><span class="line">    ~ 解压缩和解归档</span><br><span class="line">    xz -d Python-3.7.8.tar.xz</span><br><span class="line">    tar -xf Python-3.7.8.tar</span><br><span class="line">    ~ 安装前的准备工作</span><br><span class="line">    cd Python-3.7.8</span><br><span class="line">    .&#x2F;configure --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;python37 --enable-optimizations</span><br><span class="line">    ~ 构建和安装</span><br><span class="line">    make &amp;&amp; make install</span><br><span class="line">    ~ 配置PATH环境变量</span><br><span class="line">    vim &#x2F;etc&#x2F;bashrc ---&gt; 系统环境变量</span><br><span class="line">    vim ~&#x2F;.bash_profile ---&gt; 用户环境变量</span><br><span class="line">    ---&gt; Go</span><br><span class="line">    export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;python37&#x2F;bin</span><br><span class="line">    ---&gt; Esc ZZ</span><br><span class="line">    ~ 检查是否安装成功</span><br><span class="line">    退出登录，重新登录，激活PATH环境变量</span><br><span class="line">    python3 --version</span><br><span class="line">    pip3 --version</span><br></pre></td></tr></table></figure>
 
 
-            </div>
+  </div>
+</section>
 
-            <!-- Post Comments -->
+		
+
+
+<footer class="footer">
+  <div class="content container">
+      <!--// row -->
+      <div class="row">
+          <div class="col-xs-6">
             
-    <!-- 使用 DISQUS_CLICK -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
-
-<!-- add animation -->
-<style>
-	.disqus_click_btn {
-            line-height: 30px;
-            margin: 0;
-            min-width: 50px;
-            padding: 0 14px;
-            display: inline-block;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0;
-            overflow: hidden;
-            will-change: box-shadow;
-            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
-            outline: 0;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            vertical-align: middle;
-            border: 0;
-            background: rgba(158, 158, 158, .2);
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-            color: #fff;
-            background-color: #7EC0EE;
-            text-shadow: 0
-        }
-</style>
-	
-<div class="btn_click_load" id="disqus_bt"> 
-    <button class="disqus_click_btn">点击查看评论</button>
-</div>
-
-<!--
-<script type="text/javascript">
-$('.btn_click_load').click(function() {
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    document.getElementById('disqus_bt').style.display = "none";
-});
-</script>
--->
-<script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'http://uncleblithe.top/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://uncleblithe.top/2020/07/25/linux%EF%BC%88git%E4%BB%A5%E5%8F%8A%E7%A8%8B%E5%BA%8F%E5%AE%89%E8%A3%85%EF%BC%89/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-
-<script type="text/javascript">
-    $('.btn_click_load').click(function() {  //click to load comments
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document;
-            var s = d.createElement('script');
-            s.src = '//http-miccall-tech.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', + new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-        $('.btn_click_load').css('display','none');
-    });
-</script>
-</div>
-<style>
-    #disqus-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-
-
-        </div>
-        <!-- Copyright 版权 start -->
-                <div id="copyright">
-            <ul>
-                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener" style="border-bottom: none;">hexo</a></li>
-                <li>Design: <a href="http://miccall.tech " target="_blank" rel="noopener" style="border-bottom: none;">miccall</a></li>
-            </ul>
+              <img class="footer-logo" src="img/logo-dark.png" alt="隔壁捷叔叔的技术博客">
             
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-			
-        </div>
-    </div>
-</body>
+          </div>
+          <div class="col-xs-6 text-right sm-text-left">
+              <p class="margin-b-0">
+                <a class="fweight-700" href="https://hexo.io/" target="_blank" rel="noopener">Hexo.io</a> adaptation by <a class="fweight-700" href="https://molavec.com" target="_blank" rel="noopener">Molavec</a>.
+                <br>
+                <br>
+                <a class="fweight-700" href="https://keenthemes.com/preview/aircv/" target="_blank" rel="noopener">Aircv</a>. Theme Powered by: <a class="fweight-700" href="https://www.keenthemes.com/" target="_blank" rel="noopener">KeenThemes.com</a>.
+            </p>
+          </div>
+      </div>
+      <!--// end row -->
+  </div>
+</footer>
+		<!-- Back To Top -->
+<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- CORE PLUGINS -->
+<script src="/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="/vendor/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- PAGE LEVEL PLUGINS -->
+<script src="/vendor/jquery.easing.js" type="text/javascript"></script>
+<script src="/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+<script src="/vendor/jquery.wow.min.js" type="text/javascript"></script>
+<script src="/vendor/jquery.parallax.min.js" type="text/javascript"></script>
+<script src="/vendor/jquery.appear.js" type="text/javascript"></script>
+<script src="/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+<script src="/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+<!-- PAGE LEVEL SCRIPTS -->
 
 
 
- 	
+<script src="/js/layout.js"></script>
+<script src="/js/components/progress-bar.js"></script>
+<script src="/js/components/masonry.js"></script>
+<script src="/js/components/wow.js"></script>
+
+
+		
+
+  </body>
 </html>
